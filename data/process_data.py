@@ -28,6 +28,7 @@ def load_data(messages_filepath, categories_filepath):
 def clean_data(df):
     """
     Clean the data by splitting categories, converting them to binary, and removing duplicates.
+    Additional steps include filtering out invalid 'related' values and keeping columns with more than one unique value.
 
     Args:
     df: dataframe. Merged pandas dataframe containing messages and categories.
@@ -58,10 +59,18 @@ def clean_data(df):
     # Concatenate the original dataframe with the new `categories` dataframe
     df = pd.concat([df, categories], axis=1)
     
+    # Remove rows where 'related' column has the value 2
+    df = df[df['related'] != 2]
+
+    # Keep only columns with more than one unique value
+    valid_cols = [col for col in df.columns if df[col].nunique() > 1]
+    df = df[valid_cols]
+
     # Drop duplicates
     df = df.drop_duplicates()
     
     return df
+
 
 
 def save_data(df, database_filename):
