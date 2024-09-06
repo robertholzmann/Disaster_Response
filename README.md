@@ -10,6 +10,7 @@ This project is a part of Udacity's Data Scientist Nanodegree Program in collabo
 4. [Installation](#installation)
 5. [Screenshots](#screenshots)
 6. [Acknowledgements](#acknowledgements)
+7. [License](#License)
 
 ## Introduction
 
@@ -97,37 +98,41 @@ nltk.download('wordnet')
 
 ## Screenshots 
 
-This is a series of screenshots that illustrate the running of the program.
+This is a series of screenshots that illustrate the creation of the web app.
 
-process_data.py
+**process_data.py**
 
 !['Local Image'](screenshots/1_process_data.png)
 
-train_classifier.py
+**train_classifier.py**
 
 !['Local Image'](screenshots/2_train_classifier.png)
 
-Results for train_classifier.py
+**Results for train_classifier.py**
 
 !['Local Image'](screenshots/3_classifier_result.png)
 !['Local Image'](screenshots/4_classifier_end.png)
 
-Results of run.py
+**Results of run.py**
 
 !['Local Image'](screenshots/5_run_py.png)
 
-Heading of the web app
+## **Web App**
 
 !['Local Image'](screenshots/6_app.png)
 
-First graph of the Distribution of Message Genres
+### **Distribution of Message Genres**
 !['Local Image'](screenshots/7_graph_1.png)
 
-Second graph of Genre vs. Classification Count
+### **Genre vs. Classification Count**
 !['Local Image'](screenshots/8_graph_2.png)
 
-Third graph of a Heatmap of Classification Labels
+### **Heatmap of Classification Labels**
 !['Local Image'](screenshots/9_graph_3.png)
+
+
+
+
 
 
 ## Acknowledgments
@@ -138,3 +143,7 @@ I would like to extend my gratitude to the following organizations:
 - **Appen, formerly Figure Eight**: For their contributions to the dataset and data labeling services that were essential for the project.
 
 Thank you for your support and resources.
+
+## License
+
+You are free to use, modify, and distribute this project for any purpose, without any restrictions. 
