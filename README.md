@@ -63,7 +63,7 @@ The project includes:
 
 3. Pull up your browswer and go to:
     ```
-    http://0.0.0.0:3000/
+    http://127.0.0.1:3001
     ```
 
 
